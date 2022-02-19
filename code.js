@@ -105,6 +105,7 @@ createBrickRow(65+29+29, "green");
 createBrickRow(65+29+29+29, "yellow");
 
 function draw() {
+  mouse();
   fill ("lime");
   background("black");
   drawSprites();
@@ -154,8 +155,9 @@ if (mousePressedOver(asdg)) {
 stopSound("assets/Godzilla-vs-Biollante-Soundtrack--Bio-Wars.mp3", false);
   }
 }
-function mousePressed()
+function mouse()
 {
+  if(keyDown("space"){
 music();
 NOMUSIC();
 e.visible = false;
@@ -174,7 +176,7 @@ bricks.setVisibleEach(true);
     sprite.velocityY = -7;
     sprite.velocityX = -7;
   }
-  
+}
 }
 
 function brickHit(ball, brick) {
